@@ -26,11 +26,10 @@ Terrascan's [release page](https://github.com/tenable/terrascan/releases) includ
 
 #### macOS and Linux
 Download the latest version of builds for macOS and enter the following command.
-**Note:** for linux, replace `Darwin` with `Linux`
 
 
 ``` Bash
-$ curl -L "$(curl -s https://api.github.com/repos/tenable/terrascan/releases/latest | grep -o -E "https://.+?_Darwin_x86_64.tar.gz")" > terrascan.tar.gz
+$ curl -L "$(curl -s https://api.github.com/repos/tenable/terrascan/releases/latest | grep -o -E "https://.+?_$(uname -s)_x86_64.tar.gz")" > terrascan.tar.gz
 $ tar -xf terrascan.tar.gz terrascan && rm terrascan.tar.gz
 $ install terrascan /usr/local/bin && rm terrascan
 $ terrascan
