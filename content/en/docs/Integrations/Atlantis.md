@@ -9,7 +9,7 @@ description: >
 
 You can integrate Terrascan into an Atlantis setup using one of the two ways:
 
-* Method 1: Atlantis [Workflow-based](https://www.runatlantis.io/docs/custom-workflows.html) integration which sends scan requests to an independently running terraform server
+* Method 1: Atlantis [Workflow-based](https://www.runatlantis.io/docs/custom-workflows.html) integration which sends scan requests to an independently running terrascan server
 * Method 2: Custom Atlantis container image which has an integrated Terrascan
 
 In either scenario, the configuration of Atlantis varies from installation to installation. For instructions to install, configure, and use Atlantis, see the [Atlantis documentation](https://www.runatlantis.io/docs/).
